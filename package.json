@@ -10,8 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/auth-js": "2.71.1",
+    "@supabase/supabase-js": "2.49.4",
+    "cors": "^2.8.6",
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "pg": "^8.23.1"
+  },
+  "overrides": {
+    "@supabase/supabase-js": {
+      "@supabase/auth-js": "2.71.1"
+    }
   }
 }
