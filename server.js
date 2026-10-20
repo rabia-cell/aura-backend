@@ -6,7 +6,10 @@ const { Pool } = require("pg");
 const cors = require("cors");
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: [
+    "http://localhost:5173",
+    "https://rabia-cell.github.io"
+  ]
 }));
 app.use(express.json());
 const pool = new Pool({
